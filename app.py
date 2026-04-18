@@ -16,7 +16,7 @@ def load_sentiment_model():
     from transformers import pipeline
     return pipeline(
         "text-classification",
-        model="cardiffnlp/twitter-xlm-roberta-base-sentiment",
+        model="lxyuan/distilbert-base-multilingual-cased-sentiments-student",
         top_k=1
     )
  
